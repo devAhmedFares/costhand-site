@@ -26,7 +26,7 @@
 <li><strong>Contacts.</strong> When you tap "Pick from contacts", the phone's own contact picker opens. The app receives only the one contact you choose (name and phone number) and saves it on your device. The app has no permission to read your contacts.</li>
 <li><strong>Photos and camera.</strong> A product photo or logo you take or pick is copied into the app's storage on your device. The app has no permission to read your gallery. On iPhone, the camera is used only when you choose to take a photo, and "Save Image" in the share sheet adds a picture you share (such as your price list) to your photo library, with your permission.</li>
 <li><strong>Receipt reading.</strong> Reading prices from a photo of a receipt happens on your device (Android: Tesseract in the app; iPhone: Apple's Vision framework). The photo is not stored or sent.</li>
-<li><strong>App lock.</strong> If you turn on the lock, your phone checks your fingerprint, face (Face ID / Touch ID on iPhone) or PIN or passcode. The app never sees them. While the lock is on, the iPhone app hides its screens in the app switcher and its reminders show no customer names.</li>
+<li><strong>App lock.</strong> If you turn on the lock, your phone checks your fingerprint, face (Face ID / Touch ID on iPhone) or PIN or passcode. The app never sees them. While the lock is on, the app hides its screens in the app switcher (recent apps on Android) and its reminders show no customer names (on Android the home screen widget too).</li>
 <li><strong>Notifications.</strong> Reminders are scheduled on your device.</li>
 </ul>
 <h2>When data leaves your device</h2>
@@ -40,8 +40,8 @@
 <h2>Purchases</h2>
 <p>The CostHand Pro subscription is sold by Google Play on Android and by the App Store on iPhone and iPad. Google or Apple handles the payment under its own privacy policy; the developer does not see your card or payment details. The app only asks Google Play or the App Store whether your subscription is active.</p>
 <h2>Security</h2>
-<p>Your data stays in the app's private storage, which other apps cannot read. On iPhone it is also protected by iOS file encryption when the iPhone has a passcode. You can add the app lock in Settings.</p>
-<p>A backup file is not encrypted unless you protect it with a password. On iPhone you can choose a password when you make a backup: the file is then encrypted on your device (AES-256-GCM, with a key made from your password with PBKDF2). Nobody can open it without the password, not even the developer, and a lost password cannot be recovered. Without a password, keep the backup somewhere only you can reach. (Password-protected backups are coming to Android.)</p>
+<p>Your data stays in the app's private storage, which other apps cannot read. It is also protected by the phone's own storage encryption when the phone has a screen lock (iPhone: a passcode). You can add the app lock in Settings.</p>
+<p>A backup file is not encrypted unless you protect it with a password. You can choose a password when you make a backup: the file is then encrypted on your device (AES-256-GCM, with a key made from your password with PBKDF2). Nobody can open it without the password, not even the developer, and a lost password cannot be recovered. Without a password, keep the backup somewhere only you can reach. A protected backup made on Android opens on iPhone and the other way round.</p>
 <h2>Keeping and deleting your data</h2>
 <p>Your data stays on your device until you delete it. You can delete single records in the app. To delete everything, uninstall the app or clear its storage in your phone's settings. Because the developer holds none of your data, there is nothing for the developer to delete.</p>
 <h2>Children</h2>
@@ -61,7 +61,7 @@
 <li><strong>جهات الاتصال.</strong> عند الضغط على "اختيار من جهات الاتصال" يفتح منتقي جهات الاتصال الخاص بالجهاز. التطبيق يستلم فقط جهة الاتصال المختارة (الاسم ورقم الهاتف) ويحفظها على الجهاز. التطبيق لا يملك إذن قراءة جهات الاتصال.</li>
 <li><strong>الصور والكاميرا.</strong> صورة المنتج أو الشعار الملتقطة أو المختارة تُنسخ إلى مساحة التطبيق على الجهاز. التطبيق لا يملك إذن قراءة معرض الصور. على iPhone تُستخدم الكاميرا فقط عند اختيار التقاط صورة، وخيار "حفظ الصورة" في قائمة المشاركة يضيف الصورة المشارَكة (مثل قائمة الأسعار) إلى مكتبة الصور بعد الموافقة.</li>
 <li><strong>قراءة الإيصالات.</strong> قراءة الأسعار من صورة الإيصال تتم على الجهاز (أندرويد: Tesseract داخل التطبيق؛ iPhone: إطار Vision من Apple). الصورة لا تُحفظ ولا تُرسَل.</li>
-<li><strong>قفل التطبيق.</strong> عند تفعيل القفل، الجهاز نفسه يتحقق من البصمة أو الوجه (Face ID أو Touch ID على iPhone) أو الرمز. التطبيق لا يراها أبدًا. أثناء تفعيل القفل، يُخفي تطبيق iPhone شاشاته في مبدّل التطبيقات، ولا تظهر أسماء العملاء في التذكيرات.</li>
+<li><strong>قفل التطبيق.</strong> عند تفعيل القفل، الجهاز نفسه يتحقق من البصمة أو الوجه (Face ID أو Touch ID على iPhone) أو الرمز. التطبيق لا يراها أبدًا. أثناء تفعيل القفل، يُخفي التطبيق شاشاته في مبدّل التطبيقات (قائمة التطبيقات الأخيرة على أندرويد)، ولا تظهر أسماء العملاء في التذكيرات (ولا في أداة الشاشة الرئيسية على أندرويد).</li>
 <li><strong>الإشعارات.</strong> التذكيرات تُجدوَل على الجهاز.</li>
 </ul>
 <h2>متى تخرج البيانات من الجهاز</h2>
@@ -75,8 +75,8 @@
 <h2>المشتريات</h2>
 <p>اشتراك CostHand Pro يُباع عبر Google Play على أندرويد، وعبر App Store على iPhone وiPad. Google أو Apple تتولى الدفع وفق سياسة الخصوصية الخاصة بها، والمطوّر لا يرى بيانات البطاقة أو الدفع. التطبيق يسأل Google Play أو App Store فقط عمّا إذا كان الاشتراك فعّالًا.</p>
 <h2>الأمان</h2>
-<p>البيانات تبقى في مساحة التطبيق الخاصة التي لا تستطيع التطبيقات الأخرى قراءتها. وعلى iPhone تحميها أيضًا تقنية تشفير الملفات في iOS عندما يكون للجهاز رمز دخول. يمكن إضافة قفل التطبيق من الإعدادات.</p>
-<p>ملف النسخة الاحتياطية غير مشفّر إلا عند حمايته بكلمة سر. على iPhone يمكن اختيار كلمة سر عند إنشاء النسخة الاحتياطية، فيُشفَّر الملف على الجهاز (AES-256-GCM، بمفتاح مأخوذ من كلمة السر عبر PBKDF2). لا يستطيع أحد فتحه دون كلمة السر، ولا حتى المطوّر، ولا يمكن استرجاع كلمة السر إذا ضاعت. وبدون كلمة سر يُفضَّل حفظ النسخة الاحتياطية في مكان خاص. (حماية النسخة الاحتياطية بكلمة سر قادمة إلى أندرويد.)</p>
+<p>البيانات تبقى في مساحة التطبيق الخاصة التي لا تستطيع التطبيقات الأخرى قراءتها، ويحميها أيضًا تشفير التخزين في الجهاز عندما يكون للجهاز قفل شاشة (على iPhone: رمز دخول). يمكن إضافة قفل التطبيق من الإعدادات.</p>
+<p>ملف النسخة الاحتياطية غير مشفّر إلا عند حمايته بكلمة سر. يمكن اختيار كلمة سر عند إنشاء النسخة الاحتياطية، فيُشفَّر الملف على الجهاز (AES-256-GCM، بمفتاح مأخوذ من كلمة السر عبر PBKDF2). لا يستطيع أحد فتحه دون كلمة السر، ولا حتى المطوّر، ولا يمكن استرجاع كلمة السر إذا ضاعت. وبدون كلمة سر يُفضَّل حفظ النسخة الاحتياطية في مكان خاص. النسخة المحمية التي تُنشأ على أندرويد تُفتح على iPhone، والعكس.</p>
 <h2>الاحتفاظ بالبيانات وحذفها</h2>
 <p>البيانات تبقى على الجهاز إلى أن تُحذف. يمكن حذف أي سجل من داخل التطبيق. لحذف كل شيء: إزالة التطبيق أو مسح بياناته من إعدادات الجهاز. ولأن المطوّر لا يحتفظ بأي بيانات، لا يوجد لديه ما يحذفه.</p>
 <h2>الأطفال</h2>
